@@ -1,0 +1,12 @@
+composer create-project laravel/laravel example-app
+php artisan install:api
+php artisan route:list
+php artisan serve
+
+php artisan make:model -h
+php artisan make:model Nameofthemodel -a --api
+php artisan migrate
+
+php artisan migrate:rollback --path=/database/migrations/xxxx_xx_xx_xxxxxx_migration_name.php
+php artisan migrate --path=/database/migrations/xxxx_xx_xx_xxxxxx_migration_name.php
+

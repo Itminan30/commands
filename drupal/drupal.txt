@@ -1,0 +1,18 @@
+Install Drupal CMS version 10 ==============> composer create-project drupal/recommended-project:^10 my-drupal-site
+
+Install Drupal CMS version 11(requires php 8.3) ==============> composer create-project drupal/cms
+
+Just Install Drupal core version 10 ==============> composer require drupal/core:^10
+
+Install Drupal Core version 11 ==============>
+	composer create-project drupal/recommended-project drupal
+
+	cd drupal && php -d memory_limit=256M web/core/scripts/drupal quick-start demo_umami
+
+Verify if GD extension is enabled ==============> php -m | findstr gd
+
+Install drush to drupal project ==============> composer require drush/drush:*
+
+
+
+
