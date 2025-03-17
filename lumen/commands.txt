@@ -1,1 +1,4 @@
 1. Start Server ======================> php -S localhost:8000 -t public or, php artisan serve
+2. Initialize Project ======================> composer create-project --prefer-dist laravel/lumen blog
+3. Show lumen version of project ======================> composer show laravel/lumen-framework or, php artisan --version
+4. Install a specific version of lumen ======================> composer create-project --prefer-dist laravel/lumen lumen-app "8.3.*"
