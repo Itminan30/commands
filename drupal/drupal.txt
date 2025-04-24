@@ -15,4 +15,13 @@ Install drush to drupal project ==============> composer require drush/drush:*
 
 
 
+Instruction to run existing drupal project:
+1. Install drush
+2. Import DB
+3. Configure ENV file according to DB credential
+4. Clear cache using drush
+5. Run: php -S localhost:8080 -t web\
+
+
+
 

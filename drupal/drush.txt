@@ -2,4 +2,4 @@ Clear cache ====================> vendor\bin\drush cr
 
 See drush version ====================> vendor\bin\drush --version
 
-Install a site (existing) ====================> vendor\bin\drush site-install standard \
+Install a site (existing) ====================> vendor\bin\drush site-install standard \ [might not work]
