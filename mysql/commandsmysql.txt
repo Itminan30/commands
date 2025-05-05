@@ -1,0 +1,22 @@
+1. Change DB Password:
+	ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_new_password';
+	FLUSH PRIVILEGES;
+	EXIT;
+
+2. Create new user in mysql:
+	CREATE USER 'yourusername'@'localhost' IDENTIFIED BY 'yourpassword';
+	GRANT ALL PRIVILEGES ON *.* TO 'yourusername'@'localhost' WITH GRANT OPTION;
+	FLUSH PRIVILEGES;
+	EXIT;
+
+3. Import SQL db in mysql (without logged in mysql):
+	mysql -u username -p database_name < /path/to/your/file.sql
+
+4. Show number of tables in DB:
+	SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'dbName';
+	,or,
+	USE databasename; 
+	SHOW TABLES; 
+	SELECT FOUND_ROWS();
+
+

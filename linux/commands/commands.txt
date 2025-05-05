@@ -1,5 +1,10 @@
 1. access root profile:
 	su root
 	sudo -s
+	
 2. List all the apt installed list:
 	apt list --manual-installed
+	
+3. Unzip gz files:
+	gzip -dk filename.gz [Keeps the original zipped file]
+	gunzip filename.sql.gz [Removes the original zipped file]

@@ -18,9 +18,11 @@ Install drush to drupal project ==============> composer require drush/drush:*
 Instruction to run existing drupal project:
 1. Install drush
 2. Import DB
-3. Configure ENV file according to DB credential
-4. Clear cache using drush
+3. Configure ENV file according to DB credential. If there is no env file then copy env.example and rename it to env
+4. Go to ./web/sites/default/ and make a settings.php from settings.local.php
+4. Clear cache using vendor\bin\drush cr
 5. Run: php -S localhost:8080 -t web\
+6. Change Super user password with this command: vendor/drush/drush/drush user:password Struthioniformes209 "password"
 
 
 
