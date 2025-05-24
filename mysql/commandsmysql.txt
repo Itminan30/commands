@@ -12,6 +12,9 @@
 3. Import SQL db in mysql (without logged in mysql):
 	mysql -u username -p database_name < /path/to/your/file.sql
 
+4. Export SQL db in mysql (without logged in mysql):
+	mysqldump -u username -p database_name > data-dump.sql
+
 4. Show number of tables in DB:
 	SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'dbName';
 	,or,

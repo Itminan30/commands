@@ -25,5 +25,17 @@ Instruction to run existing drupal project:
 6. Change Super user password with this command: vendor/drush/drush/drush user:password Struthioniformes209 "password"
 
 
+Required PHP extensions:
+1. sudo apt update
+2. sudo apt install php php-mysql php-gd php-xml php-mbstring php-curl php-zip php-xmlrpc php-json php-cli php-common unzip composer
+
+Drush alias:
+	alias drush='vendor/bin/drush'
+
+Install or Enable a custom module in drupal:
+	vendor/bin/drush en custom_module
+	
+Disable a custom module in drupal:
+	vendor/bin/drush pmu custom_module	
 
 
