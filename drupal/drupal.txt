@@ -1,4 +1,5 @@
 Install Drupal CMS version 10 ==============> composer create-project drupal/recommended-project:^10 my-drupal-site
+or go to this site and run the 1st and 3rd commands: https://www.drupal.org/project/drupal/releases/10.0.0
 
 Install Drupal CMS version 11(requires php 8.3) ==============> composer create-project drupal/cms
 
@@ -9,7 +10,7 @@ Install Drupal Core version 11 ==============>
 
 	cd drupal && php -d memory_limit=256M web/core/scripts/drupal quick-start demo_umami
 
-Verify if GD extension is enabled ==============> php -m | findstr gd
+Verify if GD extension is enabled ==============> php -m | findstr gd or php -m | grep gd
 
 Install drush to drupal project ==============> composer require drush/drush:*
 
@@ -24,10 +25,23 @@ Instruction to run existing drupal project:
 5. Run: php -S localhost:8080 -t web\
 6. Change Super user password with this command: vendor/drush/drush/drush user:password Struthioniformes209 "password"
 
+Instruction to create new drupal project:
+1. Install drupal with this command: composer create-project drupal/recommended-project:^10 my-drupal-site
+2. Get in the project folder: cd project_name
+3. Create a database for this project in mysql
+4. Install drush
+5. run the following command:
+./vendor/bin/drush site:install \
+  --db-url=mysql://root(db uname):root(db pass)@localhost:3306/drupal_gui_learn(your db name) \
+  --site-name="My Drupal GUI" \
+  --account-name=admin \
+  --account-pass=admin
+6. Run Project: php -S localhost:8080 -t \web
+
 
 Required PHP extensions:
 1. sudo apt update
-2. sudo apt install php php-mysql php-gd php-xml php-mbstring php-curl php-zip php-xmlrpc php-json php-cli php-common unzip composer
+2. sudo apt install php php-mysql php-gd php-xml php-mbstring php-curl php-zip php-xmlrpc php-cli php-common php-bcmath
 
 Drush alias:
 	alias drush='vendor/bin/drush'
