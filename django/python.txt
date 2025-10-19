@@ -1,12 +1,26 @@
-python -m venv .venv ======> start a venv environment in a project
-.\.venv\Scripts\activate ======> activate venv environment named .venv
-deactivate ======> deactivate venv environment
-
-python.exe -m pip install dependency_name ======> install a dependency
+=============================================================================== Common Commands ==============================================================================
+pip install dependency_name ======> install a dependency
 pip show dependency_name ======> shows the details about a dependency
 pip freeze > requirements.txt ======> creates a requirements file for the virtual environment
 
 pip install -r requirements.txt ======> Installs all the requirements of the requirements.txt file
 pip list ======> show all the installed dependencies
+
+
+=============================================================================== Virtual Environment Setup ==============================================================================
+Linux :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+python -m venv .venv  => Setup a virtual environment named .venv
+source .venv/bin/activate => Activate the virtual environment
+deactivate => Deactivate the virtual environment
+rm -rf myfirstproject => Delete the virtual environment
+
+Windows :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+python -m venv .venv ======> start a venv environment in a project
+.\.venv\Scripts\activate ======> activate venv environment named .venv
+deactivate ======> deactivate venv environment
+rmdir /s /q myfirstproject => Delete the virtual environment
+
+
+
 
 
